@@ -19,6 +19,7 @@ class Pokemon
     
   
     result = db.execute("SELECT * FROM pokemon WHERE id = ?;", id)
+    binding.pry
     Pokemon.new(result[0], result[1], result[2])
     
   end
