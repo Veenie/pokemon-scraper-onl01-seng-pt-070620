@@ -1,2 +1,8 @@
 class Pokemon
+  
+  
+  
+  
+  
+  
 end
