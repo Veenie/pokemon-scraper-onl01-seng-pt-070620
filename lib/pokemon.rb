@@ -15,13 +15,13 @@ class Pokemon
 
   end  
   
-  def self.find
+  def self.find(name)
     
     sql = "SELECT * FROM pokemon WHERE name = ?"
     result = DB[:conn].execute(sql, name)[0]
     Pokemon.new(result[0], result[1], result[2])
     
-  end  
+  end
   
   
   
