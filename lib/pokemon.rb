@@ -15,7 +15,7 @@ class Pokemon
 
   end  
   
-  def self.find(name)
+  def self.find(id, db)
     
     sql = "SELECT * FROM pokemon WHERE name = ?"
     result = DB[:conn].execute(sql, name)[0]
